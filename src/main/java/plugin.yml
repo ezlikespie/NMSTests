@@ -3,3 +3,5 @@ name: NMSTests
 version: 1.0.0
 description: Some NMS tests
 authors: [ezlikespie, MrBorder]
+commands:
+  fakeplayer:

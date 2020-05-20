@@ -32,7 +32,7 @@ public class FakePlayer extends Reflections{
 	private EntityPlayer npc;
 	private Player npcPlayer;
 
-	public void spawnNPC(Location l) {
+	public void spawnNPC() {
 		PacketPlayOutNamedEntitySpawn packet = new PacketPlayOutNamedEntitySpawn();
 
 		setValue(packet, "a", entityID);
@@ -69,6 +69,13 @@ public class FakePlayer extends Reflections{
 
 		sendPacket(packet);
 		sendPacket(packetHead);
+	}
+
+	public void animation(int animation){
+		PacketPlayOutAnimation packet = new PacketPlayOutAnimation();
+		setValue(packet, "a", entityID);
+		setValue(packet, "b", (byte)animation);
+		sendPacket(packet);
 	}
 
 	public int getFixLocation(double pos){
