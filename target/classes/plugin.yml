@@ -1,5 +1,5 @@
 main: me.ezlikespie.Main
-name: NPMTests
+name: NMSTests
 version: 1.0.0
-description: Some NPM tests
+description: Some NMS tests
 authors: [ezlikespie, MrBorder]
