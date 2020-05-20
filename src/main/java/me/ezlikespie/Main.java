@@ -9,6 +9,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		instance = this;
+		getCommand("fakeplayer").setExecutor(new FakePlayerCommand());
 	}
 	
 	@Override
