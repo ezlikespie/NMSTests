@@ -5,3 +5,4 @@ description: Some NMS tests
 authors: [ezlikespie, MrBorder]
 commands:
   fakeplayer:
+  watchdog:
